@@ -1,5 +1,3 @@
-# ASUS TUF F15 LAPTOP
-
 { config, pkgs, ... }: {
 
   imports = [
@@ -55,7 +53,7 @@
   services.tailscale.enable = true;
 
   # Localisation
-  time.timeZone = "YOUR TIME";
+  time.timeZone = "Asia/Yangon";
   i18n.defaultLocale = "en_US.UTF-8";
 
   # -----------------------------------------------------------------
@@ -111,8 +109,9 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
-      intel-media-driver # Hardware accelerated video decoding for Intel iGPU
-      vaapiVulkan
+      intel-media-driver   # Hardware accelerated video decoding for Intel iGPU
+      nvidia-vaapi-driver  # VA-API support for NVIDIA GPUs
+      libva-utils          # 'vainfo' CLI utility for testing hardware acceleration
     ];
   };
 
