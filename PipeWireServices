@@ -31,4 +31,6 @@ wpctl status
 wpctl set-mute <ID> 0
 wpctl set-volume <ID> 0.50
 
+//Ts just a randombull shi no neede to download, i saved it cuz i can grab it easily in the future
+
 
