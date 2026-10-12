@@ -105,7 +105,6 @@
 
   # Global system software packages
   environment.systemPackages = with pkgs; [
-    distrobox
     brave
     obs-studio
     fastfetch
@@ -113,21 +112,16 @@
     mpvpaper
     kitty
     wgcf
-    wireguard-tools
     gnomeExtensions.appindicator
     btop
     cmatrix
     cava
     tmux
-    exiftool
     ffmpeg
     ags
     wlogout
     git
-    thunar
-    p7zip
     wofi
-    font-awesome
     overskride
     networkmanager_dmenu
     swaylock
@@ -141,10 +135,7 @@
     efibootmgr
     noctalia-shell
     gnome-extension-manager
-    papirus-icon-theme
-    papirus-folders
     eww
-    vim
     playerctl
     polkit_gnome
     tty-clock
@@ -158,4 +149,4 @@
     
   ];
 
-} # The closing of the whole config. #steam is working in this config
+} # The closing of the whole config. #steam is working in this config #I haven't retested it yet, lmk if it work or not
