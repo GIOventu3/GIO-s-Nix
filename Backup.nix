@@ -21,7 +21,7 @@
   networking.networkmanager.dns = "none";
 
   # Set your time zone
-  time.timeZone = "EU";
+  time.timeZone = "Your Time Zone";
 
   # Select internationalisation properties
   i18n.defaultLocale = "en_US.UTF-8";
@@ -291,4 +291,4 @@
   # FIX: Corrected option module path to use services.supergfxd.enable
   services.supergfxd.enable = true;
 
-} # This is the close for the config
+} # End of Config # This is just a backup of my laptop
